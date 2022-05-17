@@ -1,0 +1,27 @@
+@tailwind base;
+:root {
+  --light-primary: #14fff7;
+  --light-secondary: #a0fff0;
+  --dark-primary: #242331;
+  --dark-secondary: #7c77b9;
+}
+
+a {
+  @apply text-blue-700;
+}
+
+a:hover {
+  @apply border-b-2 border-blue-700;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
