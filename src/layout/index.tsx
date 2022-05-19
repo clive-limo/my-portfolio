@@ -1,6 +1,6 @@
 import type { FC, ReactNode } from 'react';
 
-import TitleBar from '@/components/TitleBar';
+import NavBar from '@/components/NavBar';
 
 import { MainSeo } from './seo';
 
@@ -18,15 +18,15 @@ const MainLayout: FC<IMainProps> = ({
   children,
 }) => {
   return (
-    <>
+    <section className='fixed overflow-hidden inset-0'>
       <MainSeo description={description} title={title} canonical={canonical} />
       <article className="absolute h-full w-full bg-dark-primary">
-        <TitleBar />
-        <section className="flex h-full w-full flex-1 overscroll-y-auto">
+        <NavBar />
+        <section className="flex h-full w-full flex-1 ">
           {children}
         </section>
       </article>
-    </>
+    </section>
   );
 };
 
