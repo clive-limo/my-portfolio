@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 :root {
   --light-primary: #14fff7;
@@ -14,9 +16,16 @@ a:hover {
   @apply border-b-2 border-blue-700;
 }
 
+
 @tailwind components;
 
 @tailwind utilities;
+
+@layer base{
+  html{
+    font-family: Raleway;
+  }
+}
 
 .content p {
   @apply my-6;

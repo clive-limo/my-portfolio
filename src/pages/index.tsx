@@ -1,11 +1,10 @@
 import MainLayout from '@/layout';
+import HomePage from '@/modules/HomePage';
 
 function Home() {
   return (
     <MainLayout description="" title="Clive Portfolio">
-      <div>
-        <h1></h1>
-      </div>
+      <HomePage />
     </MainLayout>
   );
 }

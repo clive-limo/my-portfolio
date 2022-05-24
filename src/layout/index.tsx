@@ -18,13 +18,11 @@ const MainLayout: FC<IMainProps> = ({
   children,
 }) => {
   return (
-    <section className='fixed overflow-hidden inset-0'>
+    <section className="fixed inset-0 overflow-hidden">
       <MainSeo description={description} title={title} canonical={canonical} />
       <article className="absolute h-full w-full bg-dark-primary">
         <NavBar />
-        <section className="flex h-full w-full flex-1 ">
-          {children}
-        </section>
+        <section className="flex h-full w-full flex-1 ">{children}</section>
       </article>
     </section>
   );
