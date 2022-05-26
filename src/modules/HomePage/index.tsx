@@ -1,6 +1,9 @@
 import type { FC } from 'react';
 
+import usePageTranslation from '@/hooks/usePageTranslation';
+
 const HomePage: FC = () => {
+  const { t } = usePageTranslation('home', 'Home');
   return (
     <section className="relative flex h-full w-full">
       <img
@@ -15,19 +18,19 @@ const HomePage: FC = () => {
       />
       <div className="mx-[20px] p-5 md:mx-[15vw] md:my-[10vw]">
         <p className="text-3xl font-extralight leading-tight text-white">
-          {"Hello I'm"}
+          {t('greeting')}
         </p>
         <p className="my-0 text-[90px] font-bold leading-tight text-white">
-          {'CLIVE'}
+          {t('firstName')}
         </p>
         <p className="my-0 text-[90px] font-bold leading-tight text-white">
-          {'LIMO'}
+          {t('secondName')}
         </p>
         <p className="my-0 text-xl font-bold leading-tight text-light-primary">
-          {'FULLSTACK SOFTWARE DEVELOPER'}
+          {t('description')}
         </p>
         <button className="my-5 rounded-[30px] bg-dark-secondary px-[50px] py-3 font-semibold text-white">
-          Hire Me
+          {t('hireMe')}
         </button>
       </div>
     </section>
