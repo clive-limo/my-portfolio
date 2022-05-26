@@ -1,0 +1,9 @@
+{
+  "locales": ["en", "ja"],
+  "defaultLocale": "en",
+  "localeDetection": true,
+  "pages": {
+    "*": ["nav"],
+    "/": ["home"]
+  }
+}
