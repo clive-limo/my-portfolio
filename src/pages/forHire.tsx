@@ -1,9 +1,10 @@
 import MainLayout from '@/layout';
+import ExperiencePage from '@/modules/ExperiencePage';
 
 function ForHire() {
   return (
     <MainLayout description="" title="">
-      <section></section>
+      <ExperiencePage />
     </MainLayout>
   );
 }
