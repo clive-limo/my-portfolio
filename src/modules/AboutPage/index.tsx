@@ -4,20 +4,20 @@ const AboutPage: FC = () => {
   const PlaceHolder: String =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
   return (
-    <section className="md:flex h-full w-full bg-dark-primary">
+    <section className="h-full w-full bg-dark-primary md:flex">
       <img
         alt="Cactus Decoration"
         src="/assets/images/deco_about.svg"
         className="absolute bottom-0 right-0 h-[10vh] w-[10vh]"
       />
-      <div className="md:h-full min-w-[40vw]">
+      <div className="min-w-[40vw] md:h-full">
         <img
           alt="About page background"
           src="/assets/images/bg_about.svg"
-          className="md:my-[15vh] max-h-[40vh]"
+          className="max-h-[40vh] md:my-[15vh]"
         />
       </div>
-      <div className="md:m-[10vh] flex md:max-w-[60vw] flex-col py-[5vh]">
+      <div className="flex flex-col py-[5vh] md:m-[10vh] md:max-w-[60vw]">
         <div className="relative h-[100px] w-[170px]">
           <img
             alt="Moon background"
@@ -28,7 +28,9 @@ const AboutPage: FC = () => {
             {'ABOUT'}
           </p>
         </div>
-        <p className="text-lg md:text-xl font-extralight text-white">{PlaceHolder}</p>
+        <p className="text-lg font-extralight text-white md:text-xl">
+          {PlaceHolder}
+        </p>
       </div>
     </section>
   );
